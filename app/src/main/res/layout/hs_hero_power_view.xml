@@ -1,0 +1,75 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fullCardLyt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+
+    <ImageView
+        android:id="@+id/cardTopImg"
+        android:layout_width="140dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/user_select"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/cardBgImg"
+        android:layout_width="300dp"
+        android:layout_height="407dp"
+        android:layout_marginTop="6dp"
+        android:src="@mipmap/power_druid"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <cn.jk.hscardfactory.utils.MagicTextView
+        android:id="@+id/costTxt"
+        style="@style/cardNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="89dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintLeft_toLeftOf="@id/cardBgImg"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <cn.jk.hscardfactory.utils.MagicTextView
+        android:id="@+id/cardNameView"
+        style="@style/cardName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="187dp"
+        android:text="@string/app_name"
+        android:textColor="@color/cardNameWhite"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardBgImg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/descView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="41dp"
+        android:gravity="center_horizontal"
+        android:text="@string/app_desc"
+        android:textColor="@color/black"
+        android:textSize="17.5sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardNameView" />
+
+</android.support.constraint.ConstraintLayout>

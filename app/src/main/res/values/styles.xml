@@ -1,11 +1,117 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar.FullScreen">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar.FullScreen">
+        <item name="android:windowBackground">@drawable/start_screen</item>
+
+    </style>
+
+
+    <style name="cardNumber">
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">75sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:text">2</item>
+        <item name="strokeColor">@color/black</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="strokeJoinStyle">round</item>
+    </style>
+
+    <style name="margin16">
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="strokeColor">@color/black</item>
+        <item name="strokeWidth">1.3dp</item>
+        <item name="strokeJoinStyle">round</item>
+    </style>
+
+    <style name="cardName">
+        <item name="android:textColor">@color/cardNameWhite</item>
+        <item name="android:shadowColor">@color/black</item>
+        <item name="android:text">@string/app_name</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">10</item>
+        <item name="strokeColor">@color/black</item>
+        <item name="strokeWidth">1.3dp</item>
+        <item name="strokeJoinStyle">round</item>
+        <item name="layout_constraintLeft_toLeftOf">@id/cardBgImg</item>
+        <item name="layout_constraintRight_toRightOf">@id/cardBgImg</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">28sp</item>
+
+    </style>
+
+    <style name="inputLbl">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">45dp</item>
+        <item name="android:layout_height">45dp</item>
+    </style>
+
+    <style name="inputBottomBtn">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+
+    </style>
+
+    <style name="inputEdt">
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">160dp</item>
+    </style>
+
+    <style name="cardDesc">
+        <item name="android:id">@id/descView</item>
+
+        <item name="android:layout_width">
+            0dp
+        </item>
+        <item name="android:layout_height">
+            wrap_content
+        </item>
+        <item name="android:textColor">
+            @color/black
+        </item>
+        <item name="android:textSize">
+            17.5dp
+        </item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:text">@string/app_desc</item>
+        <item name="layout_constraintLeft_toLeftOf">@id/cardBgImg</item>
+        <item name="layout_constraintRight_toRightOf">@id/cardBgImg</item>
+
+    </style>
+
+    <style name="cardDescGold" parent="cardDesc">
+        <item name="android:textColor">
+            @color/cardNameWhite
+        </item>
+    </style>
+
+    <style name="cardRace">
+        <item name="android:textColor">@color/cardNameWhite</item>
+        <item name="strokeColor">@color/black</item>
+        <item name="strokeWidth">0.8dp</item>
+        <item name="strokeJoinStyle">round</item>
+    </style>
 </resources>

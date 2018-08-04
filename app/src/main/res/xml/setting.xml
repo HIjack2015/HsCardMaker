@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference
+        android:key="@string/copyRightNoticePref"
+        android:title="@string/copyright_notice_local"></Preference>
+    <Preference
+        android:key="@string/useTipPref"
+        android:title="@string/use_tip"></Preference>
+    <Preference
+        android:key="@string/gallery"
+        android:title="@string/gallery"></Preference>
+    <Preference
+        android:key="@string/feedback"
+        android:title="@string/feedback"></Preference>
+
+
+</PreferenceScreen>

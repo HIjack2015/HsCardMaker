@@ -1,0 +1,124 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:qwerjk="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fullCardLyt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    app:layout_constraintLeft_toLeftOf="@id/cardBgImg"
+    app:layout_constraintRight_toRightOf="@id/cardBgImg"
+    app:layout_constraintTop_toTopOf="parent">
+
+
+    <ImageView
+        android:id="@+id/cardTopImg"
+        android:layout_width="229dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="52dp"
+        android:src="@mipmap/tp_minion_col_ctg"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintLeft_toLeftOf="@id/cardBgImg"
+        app:layout_constraintRight_toRightOf="@id/cardBgImg"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/cardBgImg"
+        android:layout_width="300dp"
+        android:layout_height="407dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/spell_druid"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/dragonView"
+        android:layout_width="237dp"
+        android:layout_height="123dp"
+        android:layout_marginTop="14dp"
+        android:src="@mipmap/spell_legendary"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/rareImg"
+        android:layout_width="28dp"
+        android:layout_height="33dp"
+        android:layout_marginBottom="138.5dp"
+        android:layout_marginLeft="9dp"
+        android:src="@mipmap/rar_legendary"
+        app:layout_constraintBottom_toBottomOf="@+id/cardBgImg"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="@id/cardBgImg"
+        app:layout_constraintRight_toRightOf="@id/cardBgImg" />
+
+    <ImageView
+        android:id="@+id/gem_holder"
+        android:layout_width="72dp"
+        android:layout_height="28dp"
+        android:layout_marginBottom="153dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="0dp"
+        android:src="@mipmap/spell_basic_gem_holder_compressor"
+        app:layout_constraintBottom_toBottomOf="@+id/cardBgImg"
+        app:layout_constraintLeft_toLeftOf="@id/cardBgImg"
+        app:layout_constraintRight_toRightOf="@id/cardBgImg" />
+
+    <cn.jk.hscardfactory.utils.MagicTextView
+        android:id="@+id/costTxt"
+        style="@style/cardNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="@id/cardBgImg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeWidth="2dp"
+        qwerjk:strokeColor="@color/black"
+        qwerjk:strokeJoinStyle="round" />
+
+    <cn.jk.hscardfactory.utils.MagicTextView
+        android:id="@+id/cardNameView"
+        style="@style/cardName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="181dp"
+        android:layout_marginLeft="2dp"
+        android:textColor="@color/cardNameWhite"
+        app:layout_constraintBottom_toBottomOf="@+id/cardBgImg"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintLeft_toLeftOf="@id/cardBgImg"
+        app:layout_constraintRight_toRightOf="@id/cardBgImg"
+        app:strokeWidth="1.3dp"
+        qwerjk:strokeColor="@color/black"
+        qwerjk:strokeJoinStyle="round" />
+
+    <ImageView
+        android:id="@+id/cardSetImg"
+        android:layout_width="102dp"
+        android:layout_height="83dp"
+        android:layout_marginBottom="53dp"
+        android:src="@mipmap/tp_spell_col_ctg"
+        app:layout_constraintBottom_toBottomOf="@+id/cardBgImg"
+        app:layout_constraintLeft_toLeftOf="@id/cardBgImg"
+        app:layout_constraintRight_toRightOf="@id/cardBgImg" />
+
+    <TextView
+        android:id="@+id/descView"
+        style="@style/cardDesc"
+
+        android:layout_marginLeft="63dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/cardBgImg"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintLeft_toLeftOf="@id/cardBgImg"
+        app:layout_constraintRight_toRightOf="@id/cardBgImg"
+        app:layout_constraintTop_toBottomOf="@+id/rareImg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.25" />
+</android.support.constraint.ConstraintLayout>

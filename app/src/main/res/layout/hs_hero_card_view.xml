@@ -1,0 +1,96 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:qwerjk="http://schemas.android.com/apk/res-auto"
+                                             android:id="@+id/fullCardLyt"
+                                             android:layout_width="wrap_content"
+                                             android:layout_height="wrap_content"
+                                             android:layout_marginTop="4dp"
+                                             app:layout_constraintLeft_toLeftOf="parent"
+                                             app:layout_constraintRight_toRightOf="parent"
+                                             app:layout_constraintTop_toTopOf="parent">
+
+
+    <com.meg7.widget.SvgImageView
+        android:id="@+id/cardTopImg"
+        android:layout_width="184dp"
+        android:layout_height="194dp"
+        android:layout_marginTop="43dp"
+        android:src="@mipmap/tp_minion_col_ctg"
+        app:layout_constraintHorizontal_bias="0.568"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:svg_raw_resource="@raw/hero_card"/>
+
+    <ImageView
+        android:id="@+id/cardBgImg"
+        android:layout_width="300dp"
+        android:layout_height="440dp"
+        android:layout_marginTop="0dp"
+        android:src="@mipmap/hero_card_druid"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"/>
+
+    <cn.jk.hscardfactory.utils.MagicTextView
+        android:id="@+id/costTxt"
+        style="@style/cardNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/descView"
+        style="@style/cardDesc"
+        android:layout_marginBottom="90dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/app_desc"
+        app:layout_constraintBottom_toBottomOf="@id/cardBgImg"
+        app:layout_constraintHorizontal_bias="1.0"
+
+        app:layout_constraintLeft_toLeftOf="@id/cardBgImg"
+        app:layout_constraintRight_toRightOf="@id/cardBgImg"
+
+        app:layout_constraintVertical_bias="0.3"/>
+
+
+    <cn.jk.hscardfactory.utils.MagicTextView
+        android:id="@+id/cardNameView"
+        style="@style/cardName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="182dp"
+        android:layout_marginLeft="5dp"
+        android:text="@string/app_name"
+        android:textColor="@color/cardNameWhite"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardBgImg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:strokeWidth="1.3dp"
+        qwerjk:strokeColor="@color/black"
+        qwerjk:strokeJoinStyle="round"/>
+
+
+
+
+    <cn.jk.hscardfactory.utils.MagicTextView
+        android:id="@+id/healthTxt"
+        style="@style/cardNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/cardBgImg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>
