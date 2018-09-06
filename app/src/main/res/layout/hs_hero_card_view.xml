@@ -1,13 +1,12 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                             xmlns:app="http://schemas.android.com/apk/res-auto"
-                                             xmlns:qwerjk="http://schemas.android.com/apk/res-auto"
-                                             android:id="@+id/fullCardLyt"
-                                             android:layout_width="wrap_content"
-                                             android:layout_height="wrap_content"
-                                             android:layout_marginTop="4dp"
-                                             app:layout_constraintLeft_toLeftOf="parent"
-                                             app:layout_constraintRight_toRightOf="parent"
-                                             app:layout_constraintTop_toTopOf="parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fullCardLyt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
 
 
     <com.meg7.widget.SvgImageView
@@ -20,7 +19,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:svg_raw_resource="@raw/hero_card"/>
+        app:svg_raw_resource="@raw/hero_card" />
 
     <ImageView
         android:id="@+id/cardBgImg"
@@ -33,7 +32,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"/>
+        app:layout_constraintVertical_bias="0.0" />
 
     <cn.jk.hscardfactory.utils.MagicTextView
         android:id="@+id/costTxt"
@@ -43,7 +42,7 @@
         android:layout_marginLeft="24dp"
         android:layout_marginTop="32dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/descView"
@@ -59,27 +58,23 @@
         app:layout_constraintLeft_toLeftOf="@id/cardBgImg"
         app:layout_constraintRight_toRightOf="@id/cardBgImg"
 
-        app:layout_constraintVertical_bias="0.3"/>
+        app:layout_constraintVertical_bias="0.3" />
 
 
-    <cn.jk.hscardfactory.utils.MagicTextView
+    <cn.jk.hscardfactory.main.HeroTitleView
         android:id="@+id/cardNameView"
-        style="@style/cardName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="182dp"
-        android:layout_marginLeft="5dp"
-        android:text="@string/app_name"
-        android:textColor="@color/cardNameWhite"
-        android:textSize="30sp"
+        android:layout_width="231dp"
+        android:layout_height="57dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
         app:layout_constraintBottom_toBottomOf="@+id/cardBgImg"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:strokeWidth="1.3dp"
-        qwerjk:strokeColor="@color/black"
-        qwerjk:strokeJoinStyle="round"/>
-
-
+        app:layout_constraintEnd_toEndOf="@+id/cardBgImg"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="@+id/cardBgImg"
+        app:layout_constraintTop_toTopOf="@+id/cardBgImg"
+        app:layout_constraintVertical_bias="0.576"
+        app:size="28"
+        app:text="------------------------------------------------" />
 
 
     <cn.jk.hscardfactory.utils.MagicTextView
@@ -91,6 +86,6 @@
         android:layout_marginRight="15dp"
         app:layout_constraintBottom_toBottomOf="@id/cardBgImg"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintRight_toRightOf="parent"/>
+        app:layout_constraintRight_toRightOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

@@ -90,12 +90,21 @@ class AdjustEleDialog : DialogFragment() {
             R.id.subBtn -> {
                 var textView = viewToAdjust as TextView
                 var size = textView.textSize
-                textView.setTextSize(TypedValue.COMPLEX_UNIT_PX, size - 2)
+                if (viewToAdjust is CardTitleView) {
+                    (viewToAdjust as CardTitleView).setTextSize(size - 2)
+                } else {
+                    textView.setTextSize(TypedValue.COMPLEX_UNIT_PX, size - 2)
+                }
             }
             R.id.addBtn -> {
                 var textView = viewToAdjust as TextView
                 var size = textView.getTextSize()
-                textView.setTextSize(TypedValue.COMPLEX_UNIT_PX, size + 2)
+
+                if (viewToAdjust is CardTitleView) {
+                    (viewToAdjust as CardTitleView).setTextSize(size + 2)
+                } else {
+                    textView.setTextSize(TypedValue.COMPLEX_UNIT_PX, size + 2)
+                }
             }
             R.id.upBtn -> {
                 layoutParams.bottomMargin += movePx

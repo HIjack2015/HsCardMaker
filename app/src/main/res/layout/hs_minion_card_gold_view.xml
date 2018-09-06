@@ -96,19 +96,17 @@
         app:layout_constraintLeft_toLeftOf="@id/cardBgImg"
         app:layout_constraintTop_toTopOf="@id/cardBgImg" />
 
-    <cn.jk.hscardfactory.utils.MagicTextView
+    <cn.jk.hscardfactory.main.MinionTitleView
         android:id="@+id/cardNameView"
-        style="@style/cardName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="172dp"
-        android:rotation="-7"
-        android:text="@string/app_name"
-        android:textSize="30sp"
+        android:layout_width="230dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="155dp"
+        android:scaleY="0.8"
         app:layout_constraintBottom_toBottomOf="@+id/cardBgImg"
-        app:layout_constraintHorizontal_bias="0.531"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:size="30"
+        app:text="@string/app_name" />
 
     <ImageView
         android:id="@+id/cardSetImg"
@@ -128,16 +126,16 @@
         android:layout_marginBottom="40dp"
         android:layout_marginLeft="58dp"
         android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
         android:gravity="center_horizontal"
         android:text="@string/app_desc"
         android:textColor="@color/cardNameWhite"
         android:textSize="17.5sp"
         app:layout_constraintBottom_toBottomOf="@+id/cardBgImg"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="@id/cardBgImg"
         app:layout_constraintRight_toRightOf="@id/cardBgImg"
         app:layout_constraintTop_toBottomOf="@id/rareImg"
-        android:layout_marginTop="10dp"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintVertical_bias="0.3" />
 
     <cn.jk.hscardfactory.utils.MagicTextView

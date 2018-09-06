@@ -29,7 +29,7 @@ class HsCardView : ConstraintLayout {
 
     internal lateinit var fullCardLyt: ConstraintLayout
     internal lateinit var cardBgImg: ImageView
-    internal lateinit var cardNameView: MagicTextView
+    internal lateinit var cardNameView: View
 
     internal var rareImg: ImageView? = null
     internal var gemHolder: ImageView? = null
@@ -161,8 +161,13 @@ class HsCardView : ConstraintLayout {
     fun setName() {
 
         cardNameView.visibility = View.VISIBLE
+        if (cardNameView is TextView) {
+            (cardNameView as TextView).text = context.card.name
+        }
+        if (cardNameView is CardTitleView) {
+            (cardNameView as CardTitleView).setText(context.card.name)
+        }
 
-        cardNameView.text = context.card.name
     }
 
     fun setCost() {
@@ -187,11 +192,14 @@ class HsCardView : ConstraintLayout {
         if (descView != null) {
             descView!!.typeface = Typeface.DEFAULT
         }
-        val textViews = arrayOf<TextView?>(cardNameView, costTxt, healthTxt, attackTxt, raceTxt)
+        val textViews = arrayOf<TextView?>(costTxt, healthTxt, attackTxt, raceTxt)
         for (textView in textViews) {
             if (textView != null) {
                 textView.setTypeface(type, Typeface.BOLD)
             }
+        }
+        if (cardNameView is TextView) {
+            (cardNameView as TextView).setTypeface(type, Typeface.BOLD)
         }
     }
 

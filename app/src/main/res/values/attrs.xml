@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <declare-styleable name="SpellTitleView">
+        <attr name="text" format="string"></attr>
+        <attr name="size" format="integer"></attr>
+    </declare-styleable>
+
     <declare-styleable name="MagicTextView">
         <attr name="innerShadowColor" format="color" />
         <attr name="innerShadowRadius" format="dimension" />

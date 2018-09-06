@@ -81,21 +81,19 @@
         qwerjk:strokeColor="@color/black"
         qwerjk:strokeJoinStyle="round" />
 
-    <cn.jk.hscardfactory.utils.MagicTextView
+    <cn.jk.hscardfactory.main.SpellTitleView
         android:id="@+id/cardNameView"
-        style="@style/cardName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="181dp"
-        android:layout_marginLeft="2dp"
-        android:textColor="@color/cardNameWhite"
+        android:layout_width="231dp"
+        android:layout_height="51dp"
+        android:scaleY="0.9"
         app:layout_constraintBottom_toBottomOf="@+id/cardBgImg"
-        app:layout_constraintHorizontal_bias="0.525"
-        app:layout_constraintLeft_toLeftOf="@id/cardBgImg"
-        app:layout_constraintRight_toRightOf="@id/cardBgImg"
-        app:strokeWidth="1.3dp"
-        qwerjk:strokeColor="@color/black"
-        qwerjk:strokeJoinStyle="round" />
+        app:layout_constraintEnd_toEndOf="@+id/cardBgImg"
+        app:layout_constraintHorizontal_bias="0.59"
+        app:layout_constraintStart_toStartOf="@+id/cardBgImg"
+        app:layout_constraintTop_toTopOf="@+id/cardBgImg"
+        app:layout_constraintVertical_bias="0.53"
+        app:size="27"
+        app:text="------------------------------------------------" />
 
     <ImageView
         android:id="@+id/cardSetImg"
@@ -111,14 +109,14 @@
         android:id="@+id/descView"
         style="@style/cardDesc"
 
+        android:layout_marginBottom="50dp"
         android:layout_marginLeft="63dp"
         android:layout_marginRight="55dp"
         android:layout_marginTop="10dp"
         app:layout_constraintBottom_toBottomOf="@id/cardBgImg"
-        android:layout_marginBottom="50dp"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="@id/cardBgImg"
         app:layout_constraintRight_toRightOf="@id/cardBgImg"
         app:layout_constraintTop_toBottomOf="@+id/rareImg"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintVertical_bias="0.25" />
 </android.support.constraint.ConstraintLayout>

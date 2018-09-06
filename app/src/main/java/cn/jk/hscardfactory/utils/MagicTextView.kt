@@ -205,6 +205,7 @@ class MagicTextView : AppCompatTextView {
                 paint.maskFilter = null
                 this.setTextColor(restoreColor)
                 this.setShadowLayer(0f, 0f, 0f, 0)
+
             }
         }
 
