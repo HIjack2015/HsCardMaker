@@ -7,7 +7,7 @@ buildscript {
         support_version = '27.1.1'
         dbflow_version = "4.2.4"
         compile_sdk_version = 27
-        min_sdk_version = 21
+        min_sdk_version = 19
         target_sdk_version = 27
 
         version_code = 1

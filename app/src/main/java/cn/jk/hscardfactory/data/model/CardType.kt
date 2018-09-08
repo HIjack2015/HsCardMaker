@@ -55,8 +55,8 @@ enum class CardType {
             typeLayoutMap[MINION] = R.layout.hs_minion_card_view
 
             typeGoldLayoutMap[WEAPON] = R.layout.hs_weapon_card_gold_view
-            typeGoldLayoutMap[HERO] = R.layout.hs_hero_view
-            typeGoldLayoutMap[HERO_CARD] = R.layout.hs_hero_card_view
+            typeGoldLayoutMap[HERO] = R.layout.hs_hero_gold_view
+            typeGoldLayoutMap[HERO_CARD] = R.layout.hs_hero_card_gold_view
             typeGoldLayoutMap[SPELL] = R.layout.hs_spell_card_gold_view
             typeGoldLayoutMap[HERO_POWER] = R.layout.hs_hero_power_view
             typeGoldLayoutMap[MINION] = R.layout.hs_minion_card_gold_view

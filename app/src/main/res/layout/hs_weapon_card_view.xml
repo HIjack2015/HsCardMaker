@@ -1,13 +1,13 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                             xmlns:app="http://schemas.android.com/apk/res-auto"
-                                             xmlns:qwerjk="http://schemas.android.com/apk/res-auto"
-                                             android:id="@+id/fullCardLyt"
-                                             android:layout_width="wrap_content"
-                                             android:layout_height="wrap_content"
-                                             android:layout_marginTop="4dp"
-                                             app:layout_constraintLeft_toLeftOf="parent"
-                                             app:layout_constraintRight_toRightOf="parent"
-                                             app:layout_constraintTop_toTopOf="parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:qwerjk="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fullCardLyt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
 
 
     <ImageView
@@ -20,7 +20,7 @@
         app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/cardBgImg"
@@ -33,7 +33,18 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"/>
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/dragonView"
+        android:layout_width="240dp"
+        android:layout_height="158dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:src="@mipmap/weapon_dragon"
+        android:visibility="invisible"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/gem_holder"
@@ -46,7 +57,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/cardBgImg"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
+        app:layout_constraintRight_toRightOf="parent" />
 
     <ImageView
         android:id="@+id/cardSetImg"
@@ -58,7 +69,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/cardBgImg"
         app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
+        app:layout_constraintRight_toRightOf="parent" />
 
     <ImageView
         android:id="@+id/rareImg"
@@ -70,7 +81,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/cardBgImg"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
+        app:layout_constraintRight_toRightOf="parent" />
 
     <cn.jk.hscardfactory.utils.MagicTextView
         android:id="@+id/costTxt"
@@ -83,15 +94,23 @@
         app:layout_constraintTop_toTopOf="parent"
         app:strokeWidth="2dp"
         qwerjk:strokeColor="@color/black"
-        qwerjk:strokeJoinStyle="round"/>
+        qwerjk:strokeJoinStyle="round" />
 
-    <cn.jk.hscardfactory.utils.MagicTextView
+    <cn.jk.hscardfactory.main.StraightLineTitleView
         android:id="@+id/cardNameView"
-        style="@style/cardName"
-        android:layout_marginBottom="181dp"
-        android:textSize="30sp"
+
+        android:layout_width="230dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="184dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:width="200dp"
         app:layout_constraintBottom_toBottomOf="@+id/cardBgImg"
-        app:layout_constraintHorizontal_bias="0.527"/>
+        app:layout_constraintEnd_toEndOf="@+id/cardBgImg"
+        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintStart_toStartOf="@+id/cardBgImg"
+        app:size="24"
+        app:text="------------" />
 
     <cn.jk.hscardfactory.utils.MagicTextView
         android:id="@+id/descView"
@@ -106,7 +125,7 @@
         app:layout_constraintLeft_toLeftOf="@id/cardBgImg"
         app:layout_constraintRight_toRightOf="@id/cardBgImg"
         app:layout_constraintTop_toBottomOf="@id/cardNameView"
-        app:layout_constraintVertical_bias="0.45999998"/>
+        app:layout_constraintVertical_bias="0.45999998" />
 
     <cn.jk.hscardfactory.utils.MagicTextView
         android:id="@+id/attackTxt"
@@ -116,7 +135,7 @@
         android:layout_marginBottom="2dp"
         android:layout_marginLeft="28dp"
         qwerjk:layout_constraintBottom_toBottomOf="parent"
-        qwerjk:layout_constraintLeft_toLeftOf="parent"/>
+        qwerjk:layout_constraintLeft_toLeftOf="parent" />
 
     <cn.jk.hscardfactory.utils.MagicTextView
         android:id="@+id/healthTxt"
@@ -125,5 +144,5 @@
         android:layout_height="wrap_content"
         android:layout_marginRight="16dp"
         qwerjk:layout_constraintBottom_toBottomOf="@id/cardBgImg"
-        qwerjk:layout_constraintRight_toRightOf="@id/cardBgImg"/>
+        qwerjk:layout_constraintRight_toRightOf="@id/cardBgImg" />
 </android.support.constraint.ConstraintLayout>

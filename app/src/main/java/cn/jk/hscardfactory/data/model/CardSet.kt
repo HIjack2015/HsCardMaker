@@ -10,6 +10,9 @@ import java.util.*
  */
 
 enum class CardSet {
+    BOOM,
+    WOOD,
+    KOBOL,
     BASIC_SET, CLASSIC, HORNOR, NAXX, GVG, TORNEIO, EXPLORADORES, ROCHA_NEGRA, OLD_GODS,
     KARAZHAN, GADGETZAN, UNGORO, FROZEN_THRONE;
 
@@ -43,6 +46,11 @@ enum class CardSet {
             enumIdMap[GADGETZAN] = R.string.GADGETZAN
             enumIdMap[UNGORO] = R.string.UNGORO
             enumIdMap[FROZEN_THRONE] = R.string.FROZEN_THRONE
+            enumIdMap[BOOM] = R.string.BOOM
+            enumIdMap[WOOD] = R.string.WOOD
+            enumIdMap[KOBOL] = R.string.KOBOL
+
+
         }
 
         fun getEnum(localStr: String, context: Context): CardSet? {

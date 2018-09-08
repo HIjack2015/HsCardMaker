@@ -56,12 +56,8 @@ class MagicTextView : AppCompatTextView {
         if (attrs != null) {
             val a = context.obtainStyledAttributes(attrs, R.styleable.MagicTextView)
 
-            val typefaceName = a.getString(R.styleable.MagicTextView_typeface)
-            if (typefaceName != null) {
-                val tf = Typeface.createFromAsset(context.assets, String.format("fonts/%s.ttf", typefaceName))
-                typeface = tf
-            }
-
+            val type = Typeface.createFromAsset(context.assets, Constant.FONT_PATH)
+            setTypeface(type, Typeface.BOLD)
             if (a.hasValue(R.styleable.MagicTextView_foreground)) {
                 val foreground = a.getDrawable(R.styleable.MagicTextView_foreground)
                 if (foreground != null) {

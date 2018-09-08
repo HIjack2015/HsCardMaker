@@ -114,4 +114,12 @@
         <item name="strokeWidth">0.8dp</item>
         <item name="strokeJoinStyle">round</item>
     </style>
+
+    <style name="changeItemBtn">
+        <item name="android:scaleType">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+    </style>
 </resources>

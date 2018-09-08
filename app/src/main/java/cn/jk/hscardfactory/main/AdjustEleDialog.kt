@@ -79,7 +79,7 @@ class AdjustEleDialog : DialogFragment() {
                         moveThread!!.interrupt()
                     }
                 }
-                true
+                false
             }
         }
     }

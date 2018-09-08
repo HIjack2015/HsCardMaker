@@ -36,6 +36,17 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
+        android:id="@+id/dragonView"
+        android:layout_width="240dp"
+        android:layout_height="158dp"
+        android:layout_marginEnd="8dp"
+        android:src="@mipmap/gold_weapon_dragon"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
         android:id="@+id/gem_holder"
         android:layout_width="36.75dp"
         android:layout_height="18dp"
@@ -84,28 +95,35 @@
         qwerjk:strokeColor="@color/black"
         qwerjk:strokeJoinStyle="round" />
 
-    <cn.jk.hscardfactory.utils.MagicTextView
+    <cn.jk.hscardfactory.main.StraightLineTitleView
         android:id="@+id/cardNameView"
-        style="@style/cardName"
-        android:layout_marginBottom="186dp"
-        android:textSize="30sp"
+
+        android:layout_width="230dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="192dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:width="200dp"
         app:layout_constraintBottom_toBottomOf="@+id/cardBgImg"
-        app:layout_constraintLeft_toLeftOf="parent"
-        tools:layout_marginLeft="79dp" />
+        app:layout_constraintEnd_toEndOf="@+id/cardBgImg"
+        app:layout_constraintStart_toStartOf="@+id/cardBgImg"
+        app:size="22"
+        app:text="------------" />
+
 
     <cn.jk.hscardfactory.utils.MagicTextView
         android:id="@+id/descView"
         style="@style/cardDesc"
+        android:layout_marginBottom="15dp"
         android:layout_marginLeft="58dp"
         android:layout_marginRight="50dp"
         android:layout_marginTop="0dp"
         android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="@id/cardBgImg"
         app:layout_constraintRight_toRightOf="@id/cardBgImg"
         app:layout_constraintTop_toBottomOf="@id/cardNameView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="15dp"
         app:layout_constraintVertical_bias="0.44" />
 
     <cn.jk.hscardfactory.utils.MagicTextView

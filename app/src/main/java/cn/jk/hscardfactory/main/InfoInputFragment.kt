@@ -98,7 +98,6 @@ class InfoInputFragment : Fragment() {
                     }
                     CardType.HERO -> {
                         showRarity = false
-                        showGold = false
                         showCost = false
                         showSet = false
                         showDesc = false
@@ -106,7 +105,6 @@ class InfoInputFragment : Fragment() {
                     }
                     CardType.HERO_CARD -> {
                         showRarity = false
-                        showGold = false
                         showSet = false
                         healthImgId = R.mipmap.armor
                         showAttack = false
@@ -190,7 +188,10 @@ class InfoInputFragment : Fragment() {
     internal fun setLogic() {
         takePhotoBtn.setOnClickListener { context.pickAndCutPhotoWithPermissionCheck() }
         resetBtn.setOnClickListener { resetInput() }
-        boldDescBtn.setOnClickListener { descEdt!!.append("<b></b>") }
+        boldDescBtn.setOnClickListener {
+            descEdt!!.append("<b></b>")
+            descEdt!!.setSelection(descEdt!!.text.toString().length - "</b>".length)
+        }
 
         nameEdt!!.addTextChangedListener(object : TextWatcher {
 

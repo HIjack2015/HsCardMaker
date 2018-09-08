@@ -1,5 +1,6 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:qwerjk="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/fullCardLyt"
     android:layout_width="wrap_content"
@@ -14,9 +15,10 @@
         android:id="@+id/cardTopImg"
         android:layout_width="230dp"
         android:layout_height="267dp"
-        android:layout_marginTop="26dp"
+        android:layout_marginTop="48dp"
         android:scaleType="centerCrop"
         android:src="@mipmap/tp_minion_col_ctg"
+        app:layout_constraintHorizontal_bias="0.39"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -28,7 +30,7 @@
         android:layout_width="300dp"
         android:layout_height="407dp"
         android:layout_marginTop="10dp"
-        android:src="@mipmap/head_rogue"
+        android:src="@mipmap/head_gold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -38,25 +40,26 @@
 
     <cn.jk.hscardfactory.main.StraightLineTitleView
         android:id="@+id/cardNameView"
-        android:layout_width="180dp"
+        android:layout_width="130dp"
         android:layout_height="30dp"
-        android:layout_marginBottom="80dp"
+        android:layout_marginBottom="60dp"
         android:layout_marginStart="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintStart_toStartOf="parent"
         app:size="22"
         app:text="1" />
+
 
     <cn.jk.hscardfactory.utils.MagicTextView
         android:id="@+id/healthTxt"
         style="@style/cardNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="92dp"
+        android:layout_marginBottom="88dp"
 
-        android:layout_marginRight="25dp"
+        android:layout_marginRight="40dp"
         app:layout_constraintBottom_toBottomOf="@id/cardBgImg"
         app:layout_constraintRight_toRightOf="parent" />
 

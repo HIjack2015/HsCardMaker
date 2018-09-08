@@ -26,14 +26,14 @@
         android:layout_width="300dp"
         android:layout_height="440dp"
         android:layout_marginTop="0dp"
-        android:src="@mipmap/hero_card_druid"
+        android:src="@mipmap/gold_hero_card_demon"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
-
+   
     <cn.jk.hscardfactory.utils.MagicTextView
         android:id="@+id/costTxt"
         style="@style/cardNumber"

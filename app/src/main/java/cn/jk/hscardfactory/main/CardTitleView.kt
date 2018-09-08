@@ -19,6 +19,8 @@ abstract class CardTitleView(context: Context, attrs: AttributeSet?) : TextView(
     private var text = "This is a test"
     lateinit var originPath: String
     var viewWidth = 0
+    var viewHeight = 0
+
     var myTextSize = 60f
     abstract fun setOriginPath()
 
@@ -30,12 +32,18 @@ abstract class CardTitleView(context: Context, attrs: AttributeSet?) : TextView(
     private fun init(attributeSet: AttributeSet?) {
         context.theme.obtainStyledAttributes(
                 attributeSet,
-                R.styleable.SpellTitleView,
+                R.styleable.CardTitleView,
                 0, 0).apply {
 
             try {
-                text = getString(R.styleable.SpellTitleView_text)
-                myTextSize = ConvertUtils.dp2px(getInteger(R.styleable.SpellTitleView_size, 20).toFloat()).toFloat()
+                val nullableText = getString(R.styleable.CardTitleView_text)
+                if (nullableText == null) {
+                    text = ""
+                } else {
+                    text = nullableText
+                }
+
+                myTextSize = ConvertUtils.dp2px(getInteger(R.styleable.CardTitleView_size, 20).toFloat()).toFloat()
 
             } finally {
                 recycle()
@@ -68,7 +76,7 @@ abstract class CardTitleView(context: Context, attrs: AttributeSet?) : TextView(
         outPaint.setTypeface(tf)
     }
 
-    fun setPath() {
+    open fun setPath(viewWidth: Int, viewHeight: Int, textHeight: Int,text:String) {//TODO 重构
 
         val regex = Regex("\\d+")
         val compatPath = regex.replace(originPath) { m ->
@@ -82,23 +90,25 @@ abstract class CardTitleView(context: Context, attrs: AttributeSet?) : TextView(
     }
 
     override fun onDraw(canvas: Canvas) {
-        setPath()
+
         outPaint.textSize = myTextSize
         middlePaint.textSize = myTextSize
         innerPaint.textSize = myTextSize;
 
         if (viewWidth == 0) {
             viewWidth = canvas.width
+            viewHeight = canvas.height
         }
 
 
         var hOffset = 0f;
-        val textWidth = middlePaint.measureText(text)
+        val textWidth = outPaint.measureText(text)
+        val textHeight = myTextSize
         // TODO 这里数值是不对的,需要有一个对应的函数.但是我暂时还想不出来,这个地方要用到高等数学的微分.和曲线积分.
         if (textWidth < viewWidth) {
             hOffset = (viewWidth - textWidth) / 2
         }
-
+        setPath(viewWidth, viewHeight, textHeight.toInt(),text)
         canvas.drawTextOnPath(text, path, hOffset, 0f, outPaint)
         canvas.drawTextOnPath(text, path, hOffset, 0f, middlePaint)
         canvas.drawTextOnPath(text, path, hOffset, 0f, innerPaint)

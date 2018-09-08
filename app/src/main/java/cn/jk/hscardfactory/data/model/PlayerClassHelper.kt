@@ -38,7 +38,11 @@ object PlayerClassHelper {
             } else {
                 mipmapId = weapon_bg[indexOfClass]
             }
-            CardType.HERO -> mipmapId = hero_bg[indexOfClass]
+            CardType.HERO -> if (isGold) {
+                mipmapId = R.mipmap.head_gold
+            } else {
+                mipmapId = hero_bg[indexOfClass]
+            }
             CardType.HERO_CARD -> if (isGold) {
                 mipmapId = gold_hero_card_bg[indexOfClass]
             } else {

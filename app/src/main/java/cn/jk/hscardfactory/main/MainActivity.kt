@@ -3,6 +3,7 @@ package cn.jk.hscardfactory.main
 import android.Manifest
 import android.content.Intent
 import android.graphics.Bitmap
+import android.graphics.Color
 import android.net.Uri
 import android.os.Bundle
 import android.os.Environment
@@ -85,7 +86,7 @@ class MainActivity : BaseActivity() {
         openInputFragBtn.setOnClickListener { rootDrawerLyt!!.openDrawer(GravityCompat.START) }
         openOptionBtn.setOnClickListener { rootDrawerLyt!!.openDrawer(GravityCompat.END) }
         saveBtn.setOnClickListener { onSaveBtnClickedWithPermissionCheck() }
-        shareBtn.setOnClickListener { onShareBtnClicked() }
+        shareBtn.setOnClickListener { onShareBtnClickedWithPermissionCheck() }
     }
 
     @NeedsPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE)
@@ -96,8 +97,9 @@ class MainActivity : BaseActivity() {
             return
         }
         toast(R.string.making)
+        hsCardView.setBackgroundColor(Color.WHITE)
         val cardBitmap = ImageUtil.loadBitmapFromView(hsCardView)
-
+        hsCardView.setBackgroundColor(getColor(R.color.transparent))
         val fileName = card.name + Date().time + ".png"
         Thread(Runnable {
             val saveSuccess = ImageUtil.saveImg(mContext, fileName, cardBitmap, true)
@@ -109,7 +111,7 @@ class MainActivity : BaseActivity() {
 
     }
 
-
+    @NeedsPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE)
     fun onShareBtnClicked() {
 
         val cardNameIsEmpty = card.name.isEmpty()
@@ -120,7 +122,9 @@ class MainActivity : BaseActivity() {
             toast(R.string.making)
         }
 
+        hsCardView.setBackgroundColor(Color.WHITE)
         val cardBitmap = ImageUtil.loadBitmapFromView(hsCardView)
+        hsCardView.setBackgroundColor(getColor(R.color.transparent))
 
         val root = File(Environment.getExternalStorageDirectory().toString()
                 + File.separator + Constant.PROJECT_NAME + File.separator + "image" + File.separator)
