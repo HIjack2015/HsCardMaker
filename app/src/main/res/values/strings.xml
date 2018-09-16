@@ -50,7 +50,6 @@
     <string name="share_txt_to">分享画作获得</string>
     <string name="money6">6颗</string>
     <string name="start_create">开始创作</string>
-    <string name="share_success_desc">感谢分享！ 现在你可以使用刚刚获得的6颗 在首页的收费画集中，挑选任意一张你想要涂色的画作啦！</string>
     <string name="to_choose">去挑选</string>
     <string name="brief_desc">%s点击查看详情></string>
     <string name="to_charge">去充值</string>
@@ -60,7 +59,6 @@
     <string name="login_app_fail">登录app服务器失败</string>
     <string name="charge_success">恭喜你充值成功</string>
     <string name="unlock_success">解锁成功.</string>
-    <string name="buy_this_album">购买这个画集</string>
     <string name="something_error">出了一点错</string>
     <string name="buy_this_canvas">购买这个画作</string>
     <string name="share_text_cant_null">分享的句子不能为空</string>
@@ -154,8 +152,8 @@
          炉石传说是暴雪娱乐的游戏,所有相关图片均为暴雪娱乐的财产。 我并无侵犯版权之意。如有任何问题请发邮件至manhelpjk@gmail.com</string>
     <string name="use_tip_content" formatted="true">1.将需要加粗的文字放入&lt;b&gt;&lt;/b&gt;中,如:&lt;b&gt;战吼:&lt;/b&gt;\n2.如果你忘了某些特性,最好的办法是打开游戏看一下.\n3.制作好的卡片保存在hsCardFactory/image文件夹下.\n4.合理的模型和大胆的创新更受青睐.
     \n5.点击卡片上的各元素可呼出对应的编辑框.\n6.长按卡片各个元素可以进行大小和位置的调整.</string>
-    <string name="gallery_not_open">你可以将你的得意之作上传至展览馆供大家欣赏点评,当你的卡被多人认可后可以去掉app中的广告.
-        \n遗憾的是我现在还没做这个功能.一切顺利的话,这个功能会在2017年8月18左右上线.</string>
+    <string name="gallery_not_open">你可以将你的得意之作上传至展览馆供大家欣赏点评,
+        遗憾的是我现在还没做这个功能.一切顺利的话,这个功能会在2018年9月30左右上线.</string>
 
     <string name="feedback_content">如果您有任何意见或者建议,请发邮件至manhelpjk@gmail.com</string>
     <string name="no_permission">请给我读写外部存储的权限!</string>

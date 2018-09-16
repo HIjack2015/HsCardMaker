@@ -6,6 +6,7 @@ import android.content.Context
 import com.blankj.utilcode.util.Utils
 import com.orhanobut.logger.AndroidLogAdapter
 import com.orhanobut.logger.Logger
+`import com.tencent.bugly.crashreport.CrashReport
 
 
 /**
@@ -23,7 +24,7 @@ class MyApplication : Application() {
         super.onCreate()
         context = this
         Logger.addLogAdapter(AndroidLogAdapter())
-
+        CrashReport.initCrashReport(getApplicationContext(), "3cb5c85375", false)
         Utils.init(this)
 
         //        // 内存泄露检查工具

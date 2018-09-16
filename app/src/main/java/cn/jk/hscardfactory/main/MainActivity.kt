@@ -8,6 +8,7 @@ import android.net.Uri
 import android.os.Bundle
 import android.os.Environment
 import android.provider.MediaStore
+import android.support.v4.content.ContextCompat
 import android.support.v4.content.FileProvider
 import android.support.v4.view.GravityCompat
 import android.support.v4.widget.DrawerLayout
@@ -99,7 +100,7 @@ class MainActivity : BaseActivity() {
         toast(R.string.making)
         hsCardView.setBackgroundColor(Color.WHITE)
         val cardBitmap = ImageUtil.loadBitmapFromView(hsCardView)
-        hsCardView.setBackgroundColor(getColor(R.color.transparent))
+        hsCardView.setBackgroundColor(ContextCompat.getColor(context, R.color.transparent))
         val fileName = card.name + Date().time + ".png"
         Thread(Runnable {
             val saveSuccess = ImageUtil.saveImg(mContext, fileName, cardBitmap, true)
@@ -124,7 +125,7 @@ class MainActivity : BaseActivity() {
 
         hsCardView.setBackgroundColor(Color.WHITE)
         val cardBitmap = ImageUtil.loadBitmapFromView(hsCardView)
-        hsCardView.setBackgroundColor(getColor(R.color.transparent))
+        hsCardView.setBackgroundColor(ContextCompat.getColor(context, R.color.transparent))
 
         val root = File(Environment.getExternalStorageDirectory().toString()
                 + File.separator + Constant.PROJECT_NAME + File.separator + "image" + File.separator)
