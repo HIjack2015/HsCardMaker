@@ -2,103 +2,103 @@
         
     <string name="app_name">HsCardFactory</string>
 
-    <string name="feedback">feedback</string>
+    <string name="feedback">Feedback</string>
         
-    <string name="app_desc"><b>left</b> button to call out card information, <b>top right</b> button call out option </string>
+    <string name="app_desc"><b>left</b>button to call out card information,<b>top right</b>button call out option</string>
         
     <string name="card_desc_sample">Trenches: Make a random friend fisherman get the holy shield and +3/+3</string>
         
-    <string name="save_card">Save </string>
+    <string name="save_card">Save</string>
         
     <string name="share_card">share</string>
         
-    <string name="apply">application </string>
+    <string name="apply">application</string>
         
-    <string name="cost">crystal </string>
+    <string name="cost">crystal</string>
         
-    <string name="player_class">professional </string>
+    <string name="player_class">Class</string>
         
-    <string name="is_gold">gold card</string>
+    <string name="is_gold">Golden?</string>
         
-    <string name="card_set"> card pool </string>
+    <string name="card_set">Set</string>
         
-    <string name="race">ethrace</string>
+    <string name="race">Race</string>
         
-    <string name="reset">reset </string>
+    <string name="reset">Reset</string>
         
-    <string name="take_photo">selection map </string>
+    <string name="take_photo">Image</string>
 
         
-    <string name="neutral">Neutral </string>
+    <string name="neutral">Neutral</string>
         
     <string name="druid">Druid</string>
         
-    <string name="hunter">Hunter </string>
+    <string name="hunter">Hunter</string>
         
-    <string name="mage">Mage </string>
+    <string name="mage">Mage</string>
         
-    <string name="rogue">Rogue </string>
+    <string name="rogue">Rogue</string>
         
-    <string name="paladin"> Paladin </string>
+    <string name="paladin">Paladin</string>
         
     <string name="priest">Priest</string>
         
-    <string name="warrior">Warrior </string>
+    <string name="warrior">Warrior</string>
         
     <string name="shaman">Shaman</string>
         
-    <string name="warlock">Warlock </string>
+    <string name="warlock">Warlock</string>
         
     <string name="deathKnight">Death Knight</string>
         
     <string name="demonHunter">Demon Hunter</string>
 
         
-    <string name="BASIC_SET">Basic Series </string>
+    <string name="BASIC_SET">Basic Series</string>
         
-    <string name="PADRAO">classic </string>
+    <string name="PADRAO">classic</string>
         
-    <string name="HORNOR_SET"> honor room </string>
+    <string name="HORNOR_SET">honor room</string>
         
     <string name="NAXX">Naxxramas</string>
         
     <string name="GVG">Gnomes vs. Gnomes</string>
         
-    <string name="TORNEIO">Trial of the champion </string>
+    <string name="TORNEIO">Trial of the champion</string>
         
-    <string name="EXPLORADORES">Explorer Association </string>
+    <string name="EXPLORADORES">Explorer Association</string>
         
     <string name="ROCHA_NEGRA">The flame of Blackrock Mountain</string>
         
-    <string name="OLD_GODS"> ancient god whispers </string>
+    <string name="OLD_GODS">ancient god whispers</string>
         
-    <string name="KARAZHAN"> Karazhan night </string>
+    <string name="KARAZHAN">Karazhan night</string>
         
-    <string name="GADGETZAN">Gajisen </string>
+    <string name="GADGETZAN">Gajisen</string>
         
-    <string name="UNGORO"> brave Angolo </string>
+    <string name="UNGORO">brave Angolo</string>
         
-    <string name="FROZEN_THRONE">Ice Knight </string>
+    <string name="FROZEN_THRONE">Ice Knight</string>
         
-    <string name="BOOM">砰砰 Lab </string>
+    <string name="BOOM">pengpeng Lab</string>
         
     <string name="WOOD">Witch Forest</string>
         
-    <string name="KOBOL">Kobold </string>
+    <string name="KOBOL">Kobold</string>
 
 
         
-    <string name="MINION"> follower </string>
+    <string name="MINION">follower</string>
         
-    <string name="SPELL">Spell </string>
+    <string name="SPELL">Spell</string>
         
-    <string name="WEAPON">weapons </string>
+    <string name="WEAPON">weapons</string>
         
-    <string name="HERO">hero </string>
+    <string name="HERO">hero</string>
         
-    <string name="HERO_CARD">hero card </string>
+    <string name="HERO_CARD">hero card</string>
         
-    <string name="HERO_POWER">hero skills </string>
+    <string name="HERO_POWER">hero skills</string>
 
         
     <string name="common">Common</string>
@@ -115,17 +115,17 @@
         
     <string name="to_bold">B</string>
         
-    <string name="card_type">type </string>
+    <string name="card_type">type</string>
         
-    <string name="card_rarity">Quality </string>
+    <string name="card_rarity">Quality</string>
         
-    <string name="need_name"> card needs a name </string>
+    <string name="need_name">card needs a name</string>
         
-    <string name="save_card_success">Save successfully </string>
+    <string name="save_card_success">Save successfully</string>
         
     <string name="share_message">--from the hearth printing machine, I hope you like it.</string>
         
-    <string name="gallery">Exhibition Hall </string>
+    <string name="gallery">Exhibition Hall</string>
         
     <string name="use_tip">How to use</string>
         
@@ -135,31 +135,29 @@
         
     <string name="useTipPref">useTip</string>
         
-    <string name="confirm">confirm </string>
+    <string name="confirm">confirm</string>
         
-    <string name="copyright_notice_content">This app is not affiliated with Blizzard Entertainment.
-         Hearthstone is a game of Blizzard Entertainment, and all related pictures are the property of Blizzard Entertainment. I have no intention of infringing copyright. If you have any questions, please send an email to manhelpjk@gmail.com</string>
+    <string name="copyright_notice_content">This app is not affiliated with Blizzard Entertainment.Hearthstone is a game of Blizzard Entertainment, and all related pictures are the property of Blizzard Entertainment. I have no intention of infringing copyright. If you have any questions, please send an email to manhelpjk@gmail.com</string>
         
     <string name="use_tip_content" formatted="true">1. Put bold text into &lt;b&gt;&lt;/b&gt;, such as: &lt;b&gt; trench: &lt;/b&gt;\n2 If you forget some features, the best way is to open the game and look at it.\n3. The  card files are saved in the hsCardFactory/image folder.\n4. Reasonable models and bold innovations are more popular.
     \n5. Click on each element on the card to call out the corresponding edit box.\n6. Long press on each element of the card to adjust the size and position.</string>
         
-    <string name="gallery_not_open">You can upload your favorite works to the exhibition hall for everyone to enjoy the review.
-        Unfortunately, I haven't done this yet. If all goes well, this feature will go live around September 30, 2018.</string>
+    <string name="gallery_not_open">You can upload your favorite works to the exhibition hall for everyone to enjoy the review. Unfortunately, I haven\'t done this yet. If all goes well, this feature will go live around September 30, 2018.</string>
 
         
     <string name="feedback_content">If you have any comments or suggestions, please send an email to manhelpjk@gmail.com</string>
         
-    <string name="no_permission"> Please give me permission to read and write external storage!</string>
+    <string name="no_permission">Please give me permission to read and write external storage!</string>
         
     <string name="request_read_external">Please give me permission to read the picture!</string>
         
     <string name="no_permission_no_photo">You have cancelled the authorization. I can\'t do it for you</string>
         
-    <string name="card_desc_hint">card description </string>
+    <string name="card_desc_hint">card description</string>
         
     <string name="animal">beast</string>
         
-    <string name="making"> working…</string>
+    <string name="making">working…</string>
         
     <string name="calc_model">Check</string>
         
@@ -171,13 +169,16 @@
         
     <string name="shield">Divine Shield</string>
         
-    <string name="stealth">Stealth </string>
+    <string name="stealth">Stealth</string>
         
-    <string name="taunt">Taunts </string>
+    <string name="taunt">Taunts</string>
         
     <string name="windfuryStr">Windfury</string>
         
     <string name="lifeSteal">Lifesteal</string>
         
-    <string name="warp">Warp </string>
+    <string name="warp">Warp</string>
+    <string name="net_work_error">net error</string>
+    <string name="empty_error">empty message</string>
+    <string name="first_save">save a card fisrt~</string>
 </resources>

@@ -31,7 +31,7 @@ class InfoInputFragment : Fragment() {
     internal lateinit var cardSets: Array<String>
     internal lateinit var cardTypes: Array<String>
     internal lateinit var cardRaritys: Array<String>
-    internal var have_init = false
+    internal var check= 0
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
@@ -48,7 +48,7 @@ class InfoInputFragment : Fragment() {
         card = context.card
         setSpinner()
         setLogic()
-        have_init = true
+        
 
     }
 
@@ -74,7 +74,8 @@ class InfoInputFragment : Fragment() {
                 val cardTypeStr = cardTypes[position]
                 val cardType = CardType.SPELL.getEnum(cardTypeStr, context)
                 card!!.type = cardType!!
-                if (have_init) {
+
+                if (shouldRefresh()) {
                     context.refreshCardView()
                 }
                 var showRace = false
@@ -145,7 +146,7 @@ class InfoInputFragment : Fragment() {
                 val playerClassStr = playerClasses[position]
                 val playerClass = PlayerClass.getEnum(playerClassStr, context)
                 card!!.playerClass = playerClass!!
-                if (have_init) {
+                if (shouldRefresh()) {
                     context.hsCardView.setCardBg()
                 }
             }
@@ -159,7 +160,7 @@ class InfoInputFragment : Fragment() {
                 val str = cardSets[position]
                 val cardSet = CardSet.getEnum(str, context)
                 card!!.cardSet = cardSet!!
-                if (have_init) {
+                if (shouldRefresh()) {
                     context.hsCardView.refreshCardSet()
                 }
             }
@@ -173,7 +174,7 @@ class InfoInputFragment : Fragment() {
                 val str = cardRaritys[position]
                 val cardRarity = CardRarity.getEnum(str, context)
                 card!!.rarity = cardRarity!!
-                if (have_init) {
+                if (shouldRefresh()) {
                     context.hsCardView.refreshCardRarity()
                 }
             }
@@ -183,6 +184,11 @@ class InfoInputFragment : Fragment() {
             }
         }
 
+    }
+
+    private fun shouldRefresh(): Boolean {
+        check++
+        return check>3
     }
 
     internal fun setLogic() {

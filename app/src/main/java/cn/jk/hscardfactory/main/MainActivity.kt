@@ -18,12 +18,16 @@ import cn.jk.hscardfactory.R
 import cn.jk.hscardfactory.base.BaseActivity
 import cn.jk.hscardfactory.data.model.Card
 import cn.jk.hscardfactory.data.model.CardType
+import cn.jk.hscardfactory.data.model.Card_Table
 import cn.jk.hscardfactory.utils.Constant
 import cn.jk.hscardfactory.utils.FontUtil
 import cn.jk.hscardfactory.utils.ImageUtil
 import cn.jk.hscardfactory.utils.KeyBoardUtil
 import cn.jk.hscardfactory.view.HsCardView
 import com.orhanobut.logger.Logger
+import com.raizlabs.android.dbflow.kotlinextensions.list
+import com.raizlabs.android.dbflow.kotlinextensions.save
+import com.raizlabs.android.dbflow.kotlinextensions.select
 import com.yalantis.ucrop.UCrop
 import kotlinx.android.synthetic.main.activity_main.*
 import org.jetbrains.anko.toast
@@ -56,7 +60,12 @@ class MainActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        card = Card()
+        if(intent.extras!=null) {
+            val cardTitle=intent.extras.getString(Constant.CARD)
+           card= select.from(Card::class.java).where(Card_Table.name.eq(cardTitle)).list.get(0)
+        } else {
+            card = Card()
+        }
         FontUtil.overrideFonts(mContext, rootDrawerLyt, Constant.FONT_PATH)
         infoInputFragment = supportFragmentManager.findFragmentById(R.id.infoInputFrag) as InfoInputFragment
         infoInputFragment.init()
@@ -105,7 +114,9 @@ class MainActivity : BaseActivity() {
         val fileName = card.name + Date().time + ".png"
         Thread(Runnable {
             val saveSuccess = ImageUtil.saveImg(mContext, fileName, cardBitmap, true)
+
             if (saveSuccess) {
+                card.save()
                 runOnUiThread { toast(R.string.save_card_success) }
 
             }
@@ -136,6 +147,7 @@ class MainActivity : BaseActivity() {
             if (!saveSuccess) {
                 return@Runnable
             }
+            card.save()
             val imageFile = File(root, fileName)
             val imageUri = FileProvider.getUriForFile(context, context.getApplicationContext().getPackageName(), imageFile);
             val intent = Intent(Intent.ACTION_SEND)

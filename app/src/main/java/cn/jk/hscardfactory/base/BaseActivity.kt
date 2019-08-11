@@ -48,14 +48,14 @@ abstract class BaseActivity : AppCompatActivity() {
         }
 
         setContentView(mContentViewId)
-        setFullScreen()
+
         requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
         initLayout()
         if (supportActionBar != null) {
             supportActionBar!!.setDisplayShowTitleEnabled(false)
         }
 
-        window.decorView.setOnSystemUiVisibilityChangeListener { setFullScreen() }
+
         if (mBackBtn != null) {
             mBackBtn!!.setOnClickListener(object : DebouncedOnClickListener() {
                 public override fun onDebouncedClick(v: View) {
@@ -87,15 +87,7 @@ abstract class BaseActivity : AppCompatActivity() {
 
     }
 
-    override fun onConfigurationChanged(newConfig: Configuration) {
-        super.onConfigurationChanged(newConfig)
-        setFullScreen()
-    }
 
-    override fun onWindowFocusChanged(hasFocus: Boolean) {
-        super.onWindowFocusChanged(hasFocus)
-        setFullScreen()
-    }
 
 
     override fun onSupportNavigateUp(): Boolean {

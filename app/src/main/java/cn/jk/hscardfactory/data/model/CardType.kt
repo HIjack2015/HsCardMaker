@@ -32,6 +32,10 @@ enum class CardType {
         }
         return localArr
     }
+    fun getLocalStr(context: Context):String {
+        val resId = typeNameMap[this]
+        return context.getString(resId!!)
+    }
 
     companion object {
         internal var typeNameMap = HashMap<CardType, Int>()

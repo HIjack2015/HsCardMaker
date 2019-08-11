@@ -65,6 +65,9 @@ enum class CardSet {
             }
             return null
         }
+        fun getString(cardSet:CardSet,context: Context):String {
+            return context.getString(enumIdMap[cardSet]!!)
+        }
     }
 
 

@@ -3,6 +3,13 @@ package cn.jk.hscardfactory.data.model
 import android.graphics.Bitmap
 import cn.jk.hscardfactory.MyApplication
 import cn.jk.hscardfactory.R
+import cn.jk.hscardfactory.data.AppDatabase
+import cn.jk.hscardfactory.data.Converter
+import cn.jk.hscardfactory.data.Converter.PictureConverter
+import com.raizlabs.android.dbflow.annotation.Column
+import com.raizlabs.android.dbflow.annotation.PrimaryKey
+import com.raizlabs.android.dbflow.annotation.Table
+import com.raizlabs.android.dbflow.structure.BaseModel
 import java.io.Serializable
 import java.util.regex.Pattern
 
@@ -10,24 +17,28 @@ import java.util.regex.Pattern
 /**
  * Created by Administrator on 2017/4/7.
  */
+@Table(database = AppDatabase::class)
+class Card : BaseModel(),Serializable {
 
-class Card : Serializable {
+    @PrimaryKey
+    var name: String = "" //卡牌名称
+     @Column var isGold: Boolean = false//是否为金卡
+    @Column  var cost: Int = 0 //需要的法力水晶
+     @Column  var desc: String = MyApplication.context.getString(R.string.app_desc) //卡牌描述
+    @Column  var attack: Int = 0 //攻击
+    @Column  var health: Int = 0 //生命值Or 耐久
+    @Column  var race: String = ""//种族
 
+    @Column(typeConverter = PictureConverter::class)
+    var picture: Bitmap?
 
-    lateinit var name: String //卡牌名称
-    lateinit var playerClass: PlayerClass //所属职业
-    var isGold: Boolean = false//是否为金卡
-    var cost: Int = 0 //需要的法力水晶
-    lateinit var rarity: CardRarity //稀有度
-    lateinit var type: CardType  //为什么品种的卡
-    lateinit var desc: String  //卡牌描述
-    lateinit var cardSet: CardSet //牌池
-    var attack: Int = 0 //攻击
-    var health: Int = 0 //生命值Or 耐久
-    lateinit var race: String //种族
-    lateinit var picture: Bitmap
+    @Column  var cardSet: CardSet = CardSet.BASIC_SET//牌池
+    @Column  var rarity: CardRarity = CardRarity.common //稀有度
+    @Column  var type: CardType = CardType.MINION //为什么品种的卡
+    @Column  var playerClass: PlayerClass = PlayerClass.neutral//所属职业
 
     init {
+
         name = MyApplication.context.getString(R.string.app_name)
         type = CardType.MINION
         playerClass = PlayerClass.neutral
@@ -40,8 +51,8 @@ class Card : Serializable {
         attack = 2
         race = ""
         val conf = Bitmap.Config.ARGB_8888 // see other conf types
-
         picture = Bitmap.createBitmap(1, 1, conf)
+
     }
 
     fun getModelMana(): Double {

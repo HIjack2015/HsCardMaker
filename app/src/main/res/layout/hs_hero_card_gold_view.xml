@@ -52,6 +52,7 @@
         android:layout_marginBottom="52dp"
         android:text="@string/app_desc"
         app:layout_constraintBottom_toBottomOf="@id/cardBgImg"
+        app:layout_constraintTop_toBottomOf="@id/cardNameView"
         app:layout_constraintHorizontal_bias="0.0"
 
         app:layout_constraintLeft_toLeftOf="@id/cardBgImg"

@@ -6,6 +6,7 @@ package cn.jk.hscardfactory.utils
 
 object Constant {
 
+    val CARD: String="CARD"
     val DATABASE_NAME = "huaRongDao.db"
     val SOUND_ON = "SOUND_ON"
     val CURRENT_PUZZLE_NO = "CURRENT_PUZZLE_NO"

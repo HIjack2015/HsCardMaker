@@ -119,7 +119,7 @@ class HsCardView : ConstraintLayout {
         val adjustEles = arrayOf<View?>(cardNameView, costTxt, attackTxt, healthTxt, descView)
         for (view in adjustEles) {
             if (view == null) {
-                break
+                continue
             } else {
                 view.setOnLongClickListener { view ->
                     adjustView = view

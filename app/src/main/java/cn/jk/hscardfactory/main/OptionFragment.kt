@@ -11,6 +11,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import cn.jk.hscardfactory.R
+import cn.jk.hscardfactory.gallery.GalleryActivity
+import org.jetbrains.anko.startActivity
 
 /**
  * A simple [Fragment] subclass.
@@ -47,7 +49,7 @@ class OptionFragment : PreferenceFragment() {
         }
         val galleryPref = findPreference(context.getString(R.string.gallery))
         galleryPref.onPreferenceClickListener = Preference.OnPreferenceClickListener {
-            showMessage(context.getString(R.string.gallery_not_open))
+            startActivity<GalleryActivity>()
             false
         }
         val feedBackPref = findPreference(context.getString(R.string.feedback))

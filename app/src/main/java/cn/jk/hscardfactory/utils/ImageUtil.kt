@@ -65,4 +65,24 @@ object ImageUtil {
         }
         return true
     }
+    fun saveImg(context: Context, filePath: String, bitmap: Bitmap): Boolean {
+        val fOut: OutputStream
+        try {
+            val sdImageMainDirectory = File(filePath)
+            fOut = FileOutputStream(sdImageMainDirectory)
+        } catch (e: Exception) {
+            return false
+        }
+
+        try {
+            bitmap.compress(Bitmap.CompressFormat.PNG, 100, fOut)
+            fOut.flush()
+            fOut.close()
+        } catch (e: Exception) {
+            //      ToastUtil.showShort(context, e.getMessage() + "in saveImg");
+            return false
+        }
+        return true
+    }
+
 }

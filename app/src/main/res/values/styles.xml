@@ -63,7 +63,7 @@
 
     <style name="inputLbl">
         <item name="android:gravity">center</item>
-        <item name="android:layout_width">45dp</item>
+        <item name="android:layout_width">60dp</item>
         <item name="android:layout_height">45dp</item>
     </style>
 

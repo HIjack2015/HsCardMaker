@@ -67,7 +67,7 @@ abstract class BaseMvpActivity<T : BasePresenter> : BaseActivity(), BaseView {
 
     override fun onError(message: String?) {
         var notNullMessage: String
-        if (message == null) {
+       if (message == null) {
             notNullMessage = mContext.getString(R.string.empty_error)
         } else {
             notNullMessage = message

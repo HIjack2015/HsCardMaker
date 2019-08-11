@@ -49,11 +49,11 @@
         style="@style/cardDesc"
         android:layout_marginLeft="60dp"
         android:layout_marginRight="50dp"
-        android:layout_marginBottom="52dp"
+        android:layout_marginBottom="56dp"
         android:text="@string/app_desc"
         app:layout_constraintBottom_toBottomOf="@id/cardBgImg"
         app:layout_constraintHorizontal_bias="0.0"
-
+        app:layout_constraintTop_toBottomOf="@id/cardNameView"
         app:layout_constraintLeft_toLeftOf="@id/cardBgImg"
         app:layout_constraintRight_toRightOf="@id/cardBgImg"
 
