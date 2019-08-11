@@ -96,7 +96,7 @@
         qwerjk:strokeColor="@color/black"
         qwerjk:strokeJoinStyle="round" />
 
-    <cn.jk.hscardfactory.main.StraightLineTitleView
+    <cn.jk.hscardfactory.view.StraightLineTitleView
         android:id="@+id/cardNameView"
 
         android:layout_width="230dp"

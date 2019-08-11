@@ -42,7 +42,7 @@
         app:layout_constraintLeft_toLeftOf="@id/cardBgImg"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <cn.jk.hscardfactory.main.StraightLineTitleView
+    <cn.jk.hscardfactory.view.StraightLineTitleView
         android:id="@+id/cardNameView"
         style="@style/cardName"
         android:layout_width="200dp"

@@ -101,7 +101,7 @@
         qwerjk:strokeColor="@color/black"
         qwerjk:strokeJoinStyle="round" />
 
-    <cn.jk.hscardfactory.main.SpellTitleView
+    <cn.jk.hscardfactory.view.SpellTitleView
         android:id="@+id/cardNameView"
         android:layout_width="231dp"
         android:layout_height="51dp"

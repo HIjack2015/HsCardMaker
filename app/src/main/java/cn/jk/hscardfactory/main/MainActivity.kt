@@ -22,6 +22,7 @@ import cn.jk.hscardfactory.utils.Constant
 import cn.jk.hscardfactory.utils.FontUtil
 import cn.jk.hscardfactory.utils.ImageUtil
 import cn.jk.hscardfactory.utils.KeyBoardUtil
+import cn.jk.hscardfactory.view.HsCardView
 import com.orhanobut.logger.Logger
 import com.yalantis.ucrop.UCrop
 import kotlinx.android.synthetic.main.activity_main.*

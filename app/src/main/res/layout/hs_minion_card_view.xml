@@ -72,7 +72,7 @@
         app:layout_constraintLeft_toLeftOf="@id/cardBgImg"
         app:layout_constraintTop_toTopOf="@id/cardBgImg" />
 
-    <cn.jk.hscardfactory.main.MinionTitleView
+    <cn.jk.hscardfactory.view.MinionTitleView
         android:id="@+id/cardNameView"
         android:layout_width="238dp"
         android:layout_height="56dp"

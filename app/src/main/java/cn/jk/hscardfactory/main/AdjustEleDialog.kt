@@ -14,6 +14,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import cn.jk.hscardfactory.R
 import cn.jk.hscardfactory.utils.PxUtil
+import cn.jk.hscardfactory.view.CardTitleView
 import kotlinx.android.synthetic.main.dialog_adjust_ele.*
 
 /**

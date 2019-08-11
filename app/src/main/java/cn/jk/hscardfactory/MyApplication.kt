@@ -6,7 +6,7 @@ import android.content.Context
 import com.blankj.utilcode.util.Utils
 import com.orhanobut.logger.AndroidLogAdapter
 import com.orhanobut.logger.Logger
-`import com.tencent.bugly.crashreport.CrashReport
+import com.tencent.bugly.crashreport.CrashReport
 
 
 /**

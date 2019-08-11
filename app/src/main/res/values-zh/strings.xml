@@ -1,0 +1,175 @@
+<resources>
+    <string name="app_name">炉石印卡机</string>
+    <string name="navigation_drawer_open">打开侧拉</string>
+    <string name="navigation_drawer_close">关闭侧拉</string>
+    <string name="work_list">作品列表</string>
+    <string name="myWork">我的作品</string>
+    <string name="daily_task">每日签到</string>
+    <string name="coverTransition">coverTransition</string>
+    <string name="unlock">解锁</string>
+    <string name="click_for_detail">点击查看详情</string>
+    <string name="feedback_content_hint">留下你宝贵的意见吧</string>
+    <string name="contact_info_hint">您的邮箱</string>
+    <string name="submit">提交</string>
+    <string name="feedback_content_must_not_empty">反馈内容不能为空呢</string>
+    <string name="feedback_title">意见反馈</string>
+    <string name="clear_cache">清除缓存</string>
+    <string name="net_work_error">网络链接异常,</string>
+    <string name="sign_everyday">每日签到</string>
+    <string name="sign_everyday_desc">每天， 你都会有一张新的作品去创作， 只要把创作完的作品分享出去 便会获得6颗元宝\n\n 可以用它们换取一张收费内容</string>
+    <string name="ok">开始创作</string>
+    <string name="save">保存</string>
+    <string name="paint_everyday">每日一涂</string>
+    <string name="daily_paint_sub_title">每日更新的图案,还可以获得金币</string>
+    <string name="most_new">最新</string>
+    <string name="titleTransition">titleTransition</string>
+    <string name="subTitleTransition">subTitleTransition</string>
+    <string name="buy_this">购买这个画集</string>
+    <string name="privacyPolicyAndTermsOfService">隐私政策与服务条款</string>
+    <string name="rmb_symbol">¥</string>
+    <string name="edit_profile">编辑资料</string>
+    <string name="alter_portrait">修改头像</string>
+    <string name="alter_bg">修改背景</string>
+    <string name="alter_name">修改昵称</string>
+    <string name="setting">设置</string>
+    <string name="push">推送</string>
+    <string name="tutorial">教程</string>
+    <string name="switch_language">语言切换</string>
+    <string name="buy_question">购买常见问题</string>
+    <string name="feedback">反馈与建议</string>
+    <string name="rate">评分</string>
+    <string name="share">分享</string>
+    <string name="about">关于</string>
+    <string name="logout">退出登录</string>
+    <string name="operate_voice">操作声音</string>
+    <string name="share_text">分享文字</string>
+    <string name="edit">编辑</string>
+    <string name="copy">拷贝</string>
+    <string name="delete">删除</string>
+    <string name="save_to_gallery">保存到画廊</string>
+    <string name="share_txt_to">分享画作获得</string>
+    <string name="money6">6颗</string>
+    <string name="start_create">开始创作</string>
+    <string name="to_choose">去挑选</string>
+    <string name="brief_desc">%s点击查看详情></string>
+    <string name="to_charge">去充值</string>
+    <string name="login_qq">QQ登录</string>
+    <string name="wechat_login">微信登录</string>
+    <string name="qq_login">QQ登录</string>
+    <string name="login_app_fail">登录app服务器失败</string>
+    <string name="charge_success">恭喜你充值成功</string>
+    <string name="unlock_success">解锁成功.</string>
+    <string name="something_error">出了一点错</string>
+    <string name="buy_this_canvas">购买这个画作</string>
+    <string name="share_text_cant_null">分享的句子不能为空</string>
+    <string name="no_data_here">还没有任何数据</string>
+    <string name="choose_picture">选择图片</string>
+    <string name="capture">拍照</string>
+
+    <string name="update_success">更新成功</string>
+    <string name="name_cant_empty">昵称不能为空</string>
+    <string name="name_too_long">昵称不能超过15</string>
+    <string name="share_hint">分享文字</string>
+    <string name="choose_language">请选择APP语言</string>
+    <string name="zh">中文</string>
+    <string name="en">english</string>
+    <string name="empty_error">没有填写错误信息</string>
+
+    <string name="card_name">名称</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_desc"><b>左上</b> 按钮呼出卡片信息,<b>右上</b> 按钮呼出选项</string>
+    <string name="card_desc_sample">战吼:使随机的一个友方鱼人获取圣盾并+3/+3</string>
+    <string name="save_card">保存</string>
+    <string name="share_card">分享</string>
+    <string name="apply">应用</string>
+    <string name="cost">水晶</string>
+    <string name="player_class">职业</string>
+    <string name="is_gold">金卡</string>
+    <string name="card_set">牌池</string>
+    <string name="race">种族</string>
+    <string name="reset">重置</string>
+    <string name="take_photo">选图</string>
+
+    <string name="neutral">中立</string>
+    <string name="druid">小德</string>
+    <string name="hunter">猎人</string>
+    <string name="mage">法师</string>
+    <string name="rogue">盗贼 </string>
+    <string name="paladin">圣骑士</string>
+    <string name="priest">牧狗</string>
+    <string name="warrior">战士</string>
+    <string name="shaman">萨满</string>
+    <string name="warlock">术士</string>
+    <string name="deathKnight">死亡骑士</string>
+    <string name="demonHunter">恶魔猎手</string>
+
+    <string name="BASIC_SET">基础系列</string>
+    <string name="PADRAO">经典</string>
+    <string name="HORNOR_SET">荣誉室</string>
+    <string name="NAXX">纳克萨玛斯</string>
+    <string name="GVG">地精大战侏儒</string>
+    <string name="TORNEIO">冠军的试炼</string>
+    <string name="EXPLORADORES">探险者协会</string>
+    <string name="ROCHA_NEGRA">黑石山的火焰</string>
+    <string name="OLD_GODS">古神的低语</string>
+    <string name="KARAZHAN">卡拉赞之夜</string>
+    <string name="GADGETZAN">加基森</string>
+    <string name="UNGORO">勇闯安戈洛</string>
+    <string name="FROZEN_THRONE">冰封骑士</string>
+    <string name="BOOM">砰砰实验室</string>
+    <string name="WOOD">女巫森林</string>
+    <string name="KOBOL">狗头人</string>
+
+
+    <string name="MINION">随从</string>
+    <string name="SPELL">法术</string>
+    <string name="WEAPON">武器</string>
+    <string name="HERO">英雄</string>
+    <string name="HERO_CARD">英雄卡牌</string>
+    <string name="HERO_POWER">英雄技能</string>
+
+    <string name="common">普通</string>
+    <string name="rare">稀有</string>
+    <string name="epic">史诗</string>
+    <string name="legendary">传说</string>
+    <string name="free">基本</string>
+
+    <string name="to_bold">B</string>
+    <string name="card_type">类型</string>
+    <string name="card_rarity">品质</string>
+    <string name="need_name">卡需要一个名字</string>
+    <string name="save_card_success">保存成功</string>
+    <string name="share_message">--来自炉石印卡机,希望你能喜欢.</string>
+    <string name="gallery">展览馆</string>
+    <string name="use_tip">使用技巧</string>
+    <string name="copyright_notice_local">版权声明</string>
+    <string name="copyRightNoticePref">copyRightNotice</string>
+    <string name="useTipPref">useTip</string>
+    <string name="confirm">确认</string>
+    <string name="copyright_notice_content">此应用程序不隶属于暴雪娱乐。
+         炉石传说是暴雪娱乐的游戏,所有相关图片均为暴雪娱乐的财产。 我并无侵犯版权之意。如有任何问题请发邮件至manhelpjk@gmail.com</string>
+    <string name="use_tip_content" formatted="true">1.将需要加粗的文字放入&lt;b&gt;&lt;/b&gt;中,如:&lt;b&gt;战吼:&lt;/b&gt;\n2.如果你忘了某些特性,最好的办法是打开游戏看一下.\n3.制作好的卡片保存在hsCardFactory/image文件夹下.\n4.合理的模型和大胆的创新更受青睐.
+    \n5.点击卡片上的各元素可呼出对应的编辑框.\n6.长按卡片各个元素可以进行大小和位置的调整.</string>
+    <string name="gallery_not_open">你可以将你的得意之作上传至展览馆供大家欣赏点评,
+        遗憾的是我现在还没做这个功能.一切顺利的话,这个功能会在2018年9月30左右上线.</string>
+
+    <string name="feedback_content">如果您有任何意见或者建议,请发邮件至manhelpjk@gmail.com</string>
+    <string name="no_permission">请给我读写外部存储的权限!</string>
+    <string name="request_read_external">请给我读取图片的权限!</string>
+    <string name="no_permission_no_photo">您取消了授权.我无法为您进行操作</string>
+    <string name="card_desc_hint">卡牌描述</string>
+    <string name="animal">野兽</string>
+    <string name="making">制卡中...</string>
+    <string name="calc_model">模型检测</string>
+    <string name="model_mana" formatted="false">该卡价值费用为%.1f,实际费用为%d</string>
+    <string name="battleCry">战吼</string>
+    <string name="charge">冲锋</string>
+    <string name="shield">圣盾</string>
+    <string name="stealth">潜行</string>
+    <string name="taunt">嘲讽</string>
+    <string name="windfuryStr">风怒</string>
+    <string name="lifeSteal">吸血</string>
+    <string name="warp">变形</string>
+</resources>
