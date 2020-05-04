@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
         
     <string name="app_name">HsCardFactory</string>
 
@@ -6,9 +6,7 @@
         
     <string name="app_desc"><b>left</b>button to call out card information,<b>top right</b>button call out option</string>
         
-    <string name="card_desc_sample">Trenches: Make a random friend fisherman get the holy shield and +3/+3</string>
-        
-    <string name="save_card">Save</string>
+     <string name="save_card">Save</string>
         
     <string name="share_card">share</string>
         
@@ -97,6 +95,7 @@
     <string name="HERO">hero</string>
         
     <string name="HERO_CARD">hero card</string>
+    <string name="CHESS" tools:ignore="MissingTranslation">chess</string>
         
     <string name="HERO_POWER">hero skills</string>
 
@@ -142,8 +141,6 @@
     <string name="use_tip_content" formatted="true">1. Put bold text into &lt;b&gt;&lt;/b&gt;, such as: &lt;b&gt; trench: &lt;/b&gt;\n2 If you forget some features, the best way is to open the game and look at it.\n3. The  card files are saved in the hsCardFactory/image folder.\n4. Reasonable models and bold innovations are more popular.
     \n5. Click on each element on the card to call out the corresponding edit box.\n6. Long press on each element of the card to adjust the size and position.</string>
         
-    <string name="gallery_not_open">You can upload your favorite works to the exhibition hall for everyone to enjoy the review. Unfortunately, I haven\'t done this yet. If all goes well, this feature will go live around September 30, 2018.</string>
-
         
     <string name="feedback_content">If you have any comments or suggestions, please send an email to manhelpjk@gmail.com</string>
         

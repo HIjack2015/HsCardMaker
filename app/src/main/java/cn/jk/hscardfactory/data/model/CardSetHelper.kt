@@ -49,6 +49,7 @@ object CardSetHelper {
         } else {
             when (cardType) {
                 CardType.MINION -> mipmapId = minion_card_set[index]
+                CardType.CHESS -> mipmapId = minion_card_set[index]
                 CardType.HERO_CARD, CardType.SPELL -> mipmapId = spell_card_set[index]
 
                 CardType.WEAPON -> mipmapId = weapon_card_set[index]

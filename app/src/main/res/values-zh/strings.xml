@@ -2,11 +2,9 @@
     <string name="app_name">炉石印卡机</string>
 
     <string name="card_name">名称</string>
-    <string name="net_work_error">net </string>
     <string name="empty_error">empty message</string>
     <string name="app_desc"><b>左上</b> 按钮呼出卡片信息,<b>右上</b> 按钮呼出选项</string>
-    <string name="card_desc_sample">战吼:使随机的一个友方鱼人获取圣盾并+3/+3</string>
-    <string name="save_card">保存</string>
+     <string name="save_card">保存</string>
     <string name="share_card">分享</string>
     <string name="apply">应用</string>
     <string name="cost">水晶</string>
@@ -54,7 +52,7 @@
     <string name="HERO">英雄</string>
     <string name="HERO_CARD">英雄卡牌</string>
     <string name="HERO_POWER">英雄技能</string>
-
+    <string name="CHESS" >棋子</string>
     <string name="common">普通</string>
     <string name="rare">稀有</string>
     <string name="epic">史诗</string>
@@ -77,13 +75,7 @@
          炉石传说是暴雪娱乐的游戏,所有相关图片均为暴雪娱乐的财产。 我并无侵犯版权之意。如有任何问题请发邮件至manhelpjk@gmail.com</string>
     <string name="use_tip_content" formatted="true">1.将需要加粗的文字放入&lt;b&gt;&lt;/b&gt;中,如:&lt;b&gt;战吼:&lt;/b&gt;\n2.如果你忘了某些特性,最好的办法是打开游戏看一下.\n3.制作好的卡片保存在hsCardFactory/image文件夹下.\n4.合理的模型和大胆的创新更受青睐.
     \n5.点击卡片上的各元素可呼出对应的编辑框.\n6.长按卡片各个元素可以进行大小和位置的调整.</string>
-    <string name="gallery_not_open">你可以将你的得意之作上传至展览馆供大家欣赏点评,
-        遗憾的是我现在还没做这个功能.一切顺利的话,这个功能会在2018年9月30左右上线.</string>
 
-    <string name="feedback_content">如果您有任何意见或者建议,请发邮件至manhelpjk@gmail.com</string>
-    <string name="no_permission">请给我读写外部存储的权限!</string>
-    <string name="request_read_external">请给我读取图片的权限!</string>
-    <string name="no_permission_no_photo">您取消了授权.我无法为您进行操作</string>
     <string name="card_desc_hint">卡牌描述</string>
     <string name="animal">野兽</string>
     <string name="making">制卡中...</string>
@@ -97,5 +89,15 @@
     <string name="windfuryStr">风怒</string>
     <string name="lifeSteal">吸血</string>
     <string name="warp">变形</string>
+
     <string name="first_save">请先保存一张卡</string>
+
+    <string name="feedback_content">如果您有任何意见或者建议,请发邮件至manhelpjk@gmail.com</string>
+    <string name="no_permission">请给我读写外部存储的权限!</string>
+    <string name="request_read_external">请给我读取图片的权限!</string>
+    <string name="no_permission_no_photo">您取消了授权.我无法为您进行操作</string>
+
+
+    <string name="net_work_error">net </string>
+
 </resources>

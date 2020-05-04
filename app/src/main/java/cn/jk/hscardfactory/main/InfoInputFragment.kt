@@ -93,6 +93,7 @@ class InfoInputFragment : Fragment() {
 
                 when (cardType) {
                     CardType.MINION -> showRace = true
+                    CardType.CHESS -> showRace = true
                     CardType.SPELL -> {
                         showHealth = false
                         showAttack = false

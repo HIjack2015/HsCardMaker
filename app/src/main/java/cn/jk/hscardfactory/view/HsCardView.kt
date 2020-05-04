@@ -19,6 +19,7 @@ import cn.jk.hscardfactory.utils.MagicTextView
 import cn.jk.hscardfactory.utils.PxUtil
 import cn.jk.hscardfactory.main.AdjustEleDialog
 import cn.jk.hscardfactory.main.MainActivity
+import kotlinx.android.synthetic.main.hs_chess_card_view.view.*
 
 /**
  * TODO: document your custom view class.
@@ -34,6 +35,8 @@ class HsCardView : ConstraintLayout {
     internal lateinit var cardNameView: View
 
     internal var rareImg: ImageView? = null
+    internal var tierImg: ImageView? = null
+
     internal var gemHolder: ImageView? = null
     internal var costTxt: MagicTextView? = null
     internal var cardSetImg: ImageView? = null
@@ -73,6 +76,9 @@ class HsCardView : ConstraintLayout {
 
         cardBgImg = findViewById(R.id.cardBgImg)
         rareImg = findViewById(R.id.rareImg)
+
+        tierImg = findViewById(R.id.tierImg)
+
         gemHolder = findViewById(R.id.gem_holder)
         costTxt = findViewById<MagicTextView>(R.id.costTxt)
         cardNameView = findViewById(R.id.cardNameView)
@@ -172,6 +178,23 @@ class HsCardView : ConstraintLayout {
     }
 
     fun setCost() {
+
+        if(tierImg!=null){
+            var cost = context.card.cost
+            if(cost>6||cost<1) {
+                cost=1
+            }
+            val map = hashMapOf<Any, Int>()
+            map[1]=R.mipmap.tier_1
+            map[2]=R.mipmap.tier_2
+            map[3]=R.mipmap.tier_3
+            map[4]=R.mipmap.tier_4
+            map[5]=R.mipmap.tier_5
+            map[6]=R.mipmap.tier_6
+
+            tierImg!!.setImageResource(map[cost]!!)
+        }
+
         if (costTxt != null) {
             val cost = context.card.cost
             var marginLeft = costMarginLeft

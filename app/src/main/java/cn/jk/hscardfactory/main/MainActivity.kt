@@ -19,11 +19,9 @@ import cn.jk.hscardfactory.base.BaseActivity
 import cn.jk.hscardfactory.data.model.Card
 import cn.jk.hscardfactory.data.model.CardType
 import cn.jk.hscardfactory.data.model.Card_Table
-import cn.jk.hscardfactory.utils.Constant
-import cn.jk.hscardfactory.utils.FontUtil
-import cn.jk.hscardfactory.utils.ImageUtil
-import cn.jk.hscardfactory.utils.KeyBoardUtil
+import cn.jk.hscardfactory.utils.*
 import cn.jk.hscardfactory.view.HsCardView
+import com.google.android.gms.ads.AdRequest
 import com.orhanobut.logger.Logger
 import com.raizlabs.android.dbflow.kotlinextensions.list
 import com.raizlabs.android.dbflow.kotlinextensions.save
@@ -39,9 +37,13 @@ import java.util.*
 @RuntimePermissions
 class MainActivity : BaseActivity() {
     override fun initLayout() {
-
+        loadBannerAd()
     }
-
+    private fun loadBannerAd() {
+        AdMobUtil.initAd(this)
+        val adRequest = AdRequest.Builder().build()
+        adView.loadAd(adRequest)
+    }
     override val contentViewId: Int
         get() = R.layout.activity_main
 

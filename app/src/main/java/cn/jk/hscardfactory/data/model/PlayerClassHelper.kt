@@ -8,7 +8,7 @@ import cn.jk.hscardfactory.R
 
 object PlayerClassHelper {
     internal var gold_hero_card_bg = intArrayOf(R.mipmap.gold_hero_card_neutral, R.mipmap.gold_hero_card_druid, R.mipmap.gold_hero_card_hunter, R.mipmap.gold_hero_card_mage, R.mipmap.gold_hero_card_rogue, R.mipmap.gold_hero_card_paladin, R.mipmap.gold_hero_card_priest, R.mipmap.gold_hero_card_warrior, R.mipmap.gold_hero_card_shaman, R.mipmap.gold_hero_card_warlock, R.mipmap.gold_hero_card_neutral, R.mipmap.gold_hero_card_neutral)
-    internal var hero_card_bg = intArrayOf(R.mipmap.hero_card_neutral, R.mipmap.hero_card_druid, R.mipmap.hero_card_hunter, R.mipmap.hero_card_mage, R.mipmap.hero_card_rogue, R.mipmap.hero_card_paladin, R.mipmap.hero_card_priest, R.mipmap.hero_card_warrior, R.mipmap.hero_card_shaman, R.mipmap.hero_card_warlock, R.mipmap.hero_card_neutral, R.mipmap.hero_card_neutral)
+    internal var hero_card_bg = intArrayOf(R.mipmap.hero_card_neutral, R.mipmap.hero_card_druid, R.mipmap.hero_card_hunter, R.mipmap.hero_card_mage, R.mipmap.hero_card_rogue, R.mipmap.hero_card_paladin, R.mipmap.hero_card_priest, R.mipmap.hero_card_warrior, R.mipmap.hero_card_shaman, R.mipmap.hero_card_warlock, R.mipmap.hero_card_demon, R.mipmap.hero_card_demon)
     internal var hero_bg = intArrayOf(R.mipmap.head_neutral, R.mipmap.head_druid, R.mipmap.head_hunter, R.mipmap.head_mage, R.mipmap.head_rogue, R.mipmap.head_paladin, R.mipmap.head_priest, R.mipmap.head_warrior, R.mipmap.head_shaman, R.mipmap.head_warlock, R.mipmap.head_death, R.mipmap.head_demon)
     internal var minion_bg = intArrayOf(R.mipmap.minion_neutral, R.mipmap.minion_druid, R.mipmap.minion_hunter, R.mipmap.minion_mage, R.mipmap.minion_rogue, R.mipmap.minion_paladin, R.mipmap.minion_priest, R.mipmap.minion_warrior, R.mipmap.minion_shaman, R.mipmap.minion_warlock, R.mipmap.minion_death, R.mipmap.minion_demon)
     internal var minion_gold_bg = intArrayOf(R.mipmap.gold_minion_neutral, R.mipmap.gold_minion_druid, R.mipmap.gold_minion_hunter, R.mipmap.gold_minion_mage, R.mipmap.gold_minion_rogue, R.mipmap.gold_minion_paladin, R.mipmap.gold_minion_priest, R.mipmap.gold_minion_warrior, R.mipmap.gold_minion_shaman, R.mipmap.gold_minion_warlock, R.mipmap.gold_minion_death, R.mipmap.gold_minion_demon)
@@ -29,6 +29,11 @@ object PlayerClassHelper {
                 mipmapId = spell_bg[indexOfClass]
             }
             CardType.MINION -> if (isGold) {
+                mipmapId = minion_gold_bg[indexOfClass]
+            } else {
+                mipmapId = minion_bg[indexOfClass]
+            }
+            CardType.CHESS -> if (isGold) {
                 mipmapId = minion_gold_bg[indexOfClass]
             } else {
                 mipmapId = minion_bg[indexOfClass]

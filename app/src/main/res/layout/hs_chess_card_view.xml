@@ -1,0 +1,185 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fullCardLyt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+
+    <com.meg7.widget.SvgImageView
+        android:id="@+id/cardTopImg"
+        android:layout_width="180dp"
+        android:layout_height="205dp"
+        android:layout_marginTop="4dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/user_select"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/cardBgImg"
+        app:svg_raw_resource="@raw/minion" />
+
+    <ImageView
+        android:id="@+id/cardBgImg"
+        android:layout_width="300dp"
+        android:layout_height="407dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/minion_druid"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/dragonView"
+        android:layout_width="240dp"
+        android:layout_height="158dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:src="@mipmap/minion_dragon"
+        android:visibility="invisible"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="76dp" />
+
+    <ImageView
+        android:id="@+id/gem_holder"
+        android:layout_width="50dp"
+        android:layout_height="17dp"
+        android:layout_marginBottom="161dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="0dp"
+        android:src="@mipmap/minion_gem_brackets_compressor"
+        app:layout_constraintBottom_toBottomOf="@+id/cardBgImg"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <cn.jk.hscardfactory.utils.MagicTextView
+        android:id="@+id/costTxt"
+        android:visibility="gone"
+        style="@style/cardNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="0dp"
+
+        app:layout_constraintLeft_toLeftOf="@id/cardBgImg"
+        app:layout_constraintTop_toTopOf="@id/cardBgImg" />
+
+    <ImageView
+        android:id="@+id/tierImg"
+        android:layout_width="82dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="8dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/tier_1"
+        app:layout_constraintStart_toStartOf="@+id/cardBgImg"
+        app:layout_constraintTop_toTopOf="@+id/cardBgImg" />
+    <cn.jk.hscardfactory.view.MinionTitleView
+        android:id="@+id/cardNameView"
+        android:layout_width="238dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="157dp"
+        android:scaleY="0.88"
+        app:layout_constraintBottom_toBottomOf="@+id/cardBgImg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:size="28"
+        app:text="@string/app_name" />
+
+    <ImageView
+        android:id="@+id/cardSetImg"
+        android:layout_width="143.25dp"
+        android:layout_height="104.25dp"
+        android:layout_marginBottom="43dp"
+        android:layout_marginLeft="10dp"
+        android:src="@mipmap/tp_minion_col_brock"
+        app:layout_constraintBottom_toBottomOf="@+id/cardBgImg"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+
+        android:id="@+id/rareImg"
+        android:layout_width="28dp"
+        android:layout_height="33dp"
+        android:layout_marginBottom="142dp"
+        android:layout_marginLeft="11dp"
+        android:src="@mipmap/rar_legendary"
+        app:layout_constraintBottom_toBottomOf="@+id/cardBgImg"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/descView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="58dp"
+        android:layout_marginLeft="63dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:text="@string/app_desc"
+        android:textColor="@color/black"
+        android:textSize="17.5sp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardBgImg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@id/cardBgImg"
+        app:layout_constraintRight_toRightOf="@id/cardBgImg"
+        app:layout_constraintTop_toBottomOf="@+id/rareImg"
+        app:layout_constraintVertical_bias="0.39" />
+
+    <cn.jk.hscardfactory.utils.MagicTextView
+
+        android:id="@+id/attackTxt"
+        style="@style/cardNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <cn.jk.hscardfactory.utils.MagicTextView
+        android:id="@+id/healthTxt"
+        style="@style/cardNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/cardBgImg"
+        app:layout_constraintRight_toRightOf="@id/cardBgImg" />
+
+    <FrameLayout
+        android:id="@+id/raceLyt"
+        android:layout_width="130dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="27.2dp"
+        android:background="@mipmap/tribe_compressor"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintLeft_toLeftOf="@id/cardBgImg"
+        app:layout_constraintRight_toRightOf="@id/cardBgImg">
+
+        <cn.jk.hscardfactory.utils.MagicTextView
+            android:id="@+id/raceTxt"
+            style="@style/cardRace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:text="@string/animal"
+            android:textSize="17sp" />
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>
